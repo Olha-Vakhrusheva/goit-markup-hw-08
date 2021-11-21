@@ -1,6 +1,11 @@
+// .about-team {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
 .about-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -9,11 +14,17 @@
   line-height: 1.17;
   font-size: var(--main-font-size);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .adv-flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    flex-direction: row;
+  }
 }
 
 .desc-list {
@@ -24,7 +35,12 @@
 }
 
 .desc-item {
-  width: 270px;
+  width: 100%;
+  // width: 270px;
+
+  @media screen and (min-width: 768px) {
+    width: 251px;
+  }
 }
 
 .adv-bg {
@@ -45,6 +61,19 @@
   margin-bottom: 10px;
 }
 
-.desc-item + .desc-item {
-  margin-left: 30px;
+.desc-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
+
+@media screen and (min-width: 768px) {
+  .desc-item:not(:first-child) {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+
+// .desc-item + .desc-item {
+//   margin-left: 30px;
+// }

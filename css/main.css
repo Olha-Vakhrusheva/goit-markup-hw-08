@@ -595,8 +595,7 @@ form textarea:focus {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 0;
     display: flex;
     align-items: center;
   }
@@ -604,13 +603,12 @@ form textarea:focus {
 
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .header-cont {
+  .header__container {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -656,6 +654,10 @@ form textarea:focus {
   .header-contact {
     display: flex;
     margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -821,6 +823,12 @@ form textarea:focus {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__item + .header__item {
+    margin-left: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav-item:not(:first-child) {
     margin-left: 50px;
@@ -854,6 +862,7 @@ form textarea:focus {
 }
 
 .header__link--current {
+  padding-bottom: 32px;
   display: block;
   position: relative;
   color: var(--logo-accent-color);
@@ -862,9 +871,19 @@ form textarea:focus {
 }
 
 @media screen and (min-width: 768px) {
+  .header__link--current {
+    padding-bottom: 0;
+    font-weight: 500;
+    font-size: var(--main-font-size);
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header__link--current::after {
     position: absolute;
-    top: 84px;
+    top: 45px;
     left: 0;
     content: " ";
     width: 100%;
@@ -877,7 +896,7 @@ form textarea:focus {
 .header__contact {
   display: flex;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -894,15 +913,6 @@ form textarea:focus {
 .header__contact:hover .header__icon,
 .header__contact:focus .header__icon {
   fill: var(--logo-accent-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .header-contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
 }
 
 .header__icon {
@@ -923,32 +933,69 @@ form textarea:focus {
 .hero-title {
   margin-bottom: 30px;
   color: var(--primary-white-color);
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 00.06em;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-background {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images3/imghero1.jpg");
-  background-repeat: no-repeat;
+  height: 400px;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--footer-background-color);
 }
 
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-tablet2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-desktop2x.jpg");
+  }
+}
+
 .about-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -957,11 +1004,19 @@ form textarea:focus {
   line-height: 1.17;
   font-size: var(--main-font-size);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .adv-flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .adv-flex {
+    flex-basis: calc(100% / 2 - 30px);
+    flex-direction: row;
+  }
 }
 
 .desc-list {
@@ -972,7 +1027,13 @@ form textarea:focus {
 }
 
 .desc-item {
-  width: 270px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .desc-item {
+    width: 251px;
+  }
 }
 
 .adv-bg {
@@ -993,8 +1054,17 @@ form textarea:focus {
   margin-bottom: 10px;
 }
 
-.desc-item + .desc-item {
-  margin-left: 30px;
+.desc-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .desc-item:not(:first-child) {
+    margin-left: 30px;
+    margin-right: 0;
+  }
 }
 
 .photo-section {
