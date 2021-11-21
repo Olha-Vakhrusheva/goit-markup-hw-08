@@ -1,0 +1,46 @@
+.photo-section {
+  padding-bottom: 94px;
+}
+
+.photo-flex {
+  display: flex;
+}
+
+.img-item + .img-item {
+  margin-left: 30px;
+}
+
+.img-item {
+  position: relative;
+}
+
+.photo-desc {
+  position: absolute;
+  display: flex;
+  top: 224px;
+  left: 0;
+
+  height: 70px;
+  width: 100%;
+  background-color: var(--background-color-photo);
+  box-shadow: 0px 4px 4px var(--shadow-photo);
+  border-width: 1px;
+  border-color: var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-white-color);
+}
+
+.header-text {
+  @include font();
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}

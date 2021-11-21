@@ -1,0 +1,209 @@
+.modal-header {
+  margin-bottom: 12px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal-form-input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus ~ .modal-icon {
+    fill: var(--logo-accent-color);
+  }
+
+  &:focus {
+    border-color: var(--logo-accent-color);
+    outline: none;
+  }
+}
+
+.modal-form-wrapper {
+  position: relative;
+  display: block;
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+
+  &:checked + .agreement-text::before {
+    background-image: url(../images5/icon-check.svg);
+    background-color: var(--logo-accent-color);
+    border-color: var(--logo-accent-color);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: currentColor;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--logo-accent-color);
+    outline: none;
+  }
+}
+
+form textarea {
+  margin-top: 4px;
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  height: 120px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--logo-accent-color);
+  }
+}
+
+.comment-label {
+  margin-bottom: 20px;
+}
+
+.text-comment {
+  padding: 12px 16px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox-agreement:hover .agreement-text::before,
+.checkbox-agreement:focus .agreement-text::before {
+  border-color: var(--logo-accent-color);
+}
+
+.agreement-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+  padding-left: 8.38px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  justify-content: center;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #303030;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 7px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.checkbox-agreement {
+  display: flex;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement {
+  color: var(--logo-accent-color);
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 55px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--logo-accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px var(--shadow-photo);
+  border-radius: 4px;
+  border: none;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

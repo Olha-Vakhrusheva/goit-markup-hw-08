@@ -1,0 +1,50 @@
+.about-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: var(--main-font-size);
+  text-transform: uppercase;
+}
+
+.adv-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc-list {
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  list-style: none;
+  letter-spacing: 0.03em;
+}
+
+.desc-item {
+  width: 270px;
+}
+
+.adv-bg {
+  display: flex;
+  height: 120px;
+  background-color: var(--button-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-icon {
+  display: block;
+}
+
+.section-title {
+  margin-bottom: 10px;
+}
+
+.desc-item + .desc-item {
+  margin-left: 30px;
+}
