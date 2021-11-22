@@ -955,6 +955,7 @@ form textarea:focus {
   margin-left: auto;
   margin-right: auto;
   height: 400px;
+  max-width: 468px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero.jpg");
   background-position: center;
@@ -972,30 +973,42 @@ form textarea:focus {
 @media screen and (min-width: 768px) {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-tablet.jpg");
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-tablet2x.jpg");
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-desktop.jpg");
+    max-width: 1200px;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero-desktop2x.jpg");
+    max-width: 1200px;
   }
 }
 
 .about-team {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -1007,6 +1020,12 @@ form textarea:focus {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .section-title {
+    text-align: start;
+  }
+}
+
 .adv-flex {
   display: flex;
   flex-direction: column;
@@ -1014,8 +1033,37 @@ form textarea:focus {
 
 @media screen and (min-width: 768px) {
   .adv-flex {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-wrap: wrap;
     flex-direction: row;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adv-flex {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.desc-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .desc-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desc-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1024,16 +1072,6 @@ form textarea:focus {
   line-height: 1.71;
   list-style: none;
   letter-spacing: 0.03em;
-}
-
-.desc-item {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .desc-item {
-    width: 251px;
-  }
 }
 
 .adv-bg {
@@ -1054,21 +1092,20 @@ form textarea:focus {
   margin-bottom: 10px;
 }
 
-.desc-item {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .desc-item:not(:first-child) {
+@media screen and (min-width: 1200px) {
+  .desc-item + .desc-item {
     margin-left: 30px;
-    margin-right: 0;
   }
 }
 
 .photo-section {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .photo-section {
+    display: none;
+  }
 }
 
 .photo-flex {
@@ -1116,6 +1153,7 @@ form textarea:focus {
 
 .team-list {
   display: flex;
+  flex-direction: column;
 }
 
 .team-div {
@@ -1131,8 +1169,10 @@ form textarea:focus {
   border-bottom-right-radius: 4px;
 }
 
-.team-info + .team-info {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .team-info:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .name-team {
@@ -1150,10 +1190,11 @@ form textarea:focus {
 }
 
 .team-background {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--button-color);
   letter-spacing: 0.03em;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  display: block;
 }
 
 .position {
