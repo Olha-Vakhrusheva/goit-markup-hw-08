@@ -1,32 +1,29 @@
-.adr-soc {
+.footer-nav {
   display: flex;
   text-align: left;
 }
 
 @media screen and (max-width: 767px) {
-  .adr-soc {
+  .footer-nav {
     flex-direction: column;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .adr-soc {
-    width: 768px;
+  .footer-nav {
     flex-wrap: wrap;
     justify-content: space-around;
+    display: flex;
+    flex-direction: row;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .adr-soc {
-    display: flex;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .adr-soc {
+  .footer-nav {
     display: flex;
     align-items: baseline;
+    justify-content: flex-start;
   }
 }
 
@@ -45,7 +42,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  text-align: left;
+  .footer-header {
+    text-align: left;
+  }
 }
 
 .footer-right {

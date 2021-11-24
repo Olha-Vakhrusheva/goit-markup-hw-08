@@ -29,7 +29,6 @@
 }
 
 .menu-nav {
-  // margin-left: 93px;
   display: flex;
   list-style: none;
   font-size: 40px;
@@ -252,30 +251,6 @@
     margin-left: 30px;
   }
 }
-
-// .header__item {
-//   position: relative;
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1200px) {
-//   .header__item:last-child {
-//     margin-right: 83px;
-//   }
-// }
-
-// .header__list {
-//   margin-left: 93px;
-
-//   list-style: none;
-//   font-size: var(--main-font-size);
-//   font-weight: 500;
-//   line-height: 1.63;
-//   letter-spacing: 0.02em;
-// }
-
-// .header__item {
-//   text-decoration: none;
-// }
 
 @media screen and (min-width: 768px) {
   .nav-item:not(:first-child) {
