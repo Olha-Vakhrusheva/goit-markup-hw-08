@@ -20,6 +20,14 @@
   box-shadow: var(--box-shadow);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    min-width: 320px;
+    min-height: 568px;
+    padding: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;

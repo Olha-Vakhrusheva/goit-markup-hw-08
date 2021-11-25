@@ -36,7 +36,16 @@
   background-size: cover;
   background-color: var(--footer-background-color);
 
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 320px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images6/hero.jpg");
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -44,6 +53,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("/images6/hero2x.jpg");
+    max-width: 320px;
   }
 
   @media screen and (min-width: 768px) {
