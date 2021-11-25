@@ -144,14 +144,13 @@ form textarea {
 .agreement-text {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.16;
   color: var(--primary-text-color);
-  padding-left: 8.38px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
-  justify-content: center;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -175,6 +174,7 @@ form textarea {
   .agreement-text {
     font-size: 14px;
     line-height: 1.71;
+    padding-left: 8.38px;
   }
 }
 
