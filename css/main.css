@@ -138,16 +138,11 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 450px;
-  min-height: 609px;
   background-color: white;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -156,25 +151,9 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    min-width: 320px;
-    min-height: 568px;
-    padding: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
-    max-height: 609px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -1072,17 +1051,17 @@ form textarea:focus {
   background-color: var(--footer-background-color);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero-background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero.jpg");
-    max-width: 320px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images6/hero.jpg");
+    max-width: 480px;
   }
 }
 
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images6/hero2x.jpg");
-    max-width: 320px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images6/hero2x.jpg");
+    max-width: 480px;
   }
 }
 
@@ -1625,11 +1604,6 @@ form textarea:focus {
   }
 }
 
-.team-works {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header-text {
   color: var(--title-text-color);
   font-weight: 700;
@@ -1681,21 +1655,21 @@ form textarea:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
-  .card-text {
-    font-size: 15px;
-    top: 24px;
-    right: 24px;
-    left: 24px;
-    bottom: 24px;
-  }
-}
-
 @media screen and (min-width: 320px) {
   .project-name-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-text {
+    font-size: 15px;
+    top: 100%;
+    right: 24px;
+    left: 24px;
+    bottom: 24px;
   }
 }
 
@@ -1761,7 +1735,9 @@ form textarea:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.сard-bg {
-  height: 100%;
+@media screen and (min-width: 480px) {
+  .card-bg {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

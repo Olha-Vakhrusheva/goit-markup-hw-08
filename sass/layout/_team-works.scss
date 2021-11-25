@@ -1,8 +1,3 @@
-.team-works {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header-text {
   color: var(--title-text-color);
   font-weight: 700;
@@ -54,21 +49,21 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
-  .card-text {
-    font-size: 15px;
-    top: 24px;
-    right: 24px;
-    left: 24px;
-    bottom: 24px;
-  }
-}
-
 @media screen and (min-width: 320px) {
   .project-name-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-text {
+    font-size: 15px;
+    top: 100%;
+    right: 24px;
+    left: 24px;
+    bottom: 24px;
   }
 }
 
@@ -135,6 +130,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.сard-bg {
-  height: 100%;
+@media screen and (min-width: 480px) {
+  .card-bg {
+    height: 100%;
+  }
 }
