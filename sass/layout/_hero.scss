@@ -30,7 +30,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images6/hero.jpg");
+    url("./images6/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images6/hero2x.jpg");
+      url("./images6/hero2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -51,7 +51,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images6/hero-tablet.jpg");
+      url("./images6/hero-tablet.jpg");
     max-width: 768px;
   }
 
@@ -62,7 +62,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images6/hero-tablet2x.jpg");
+      url("./images6/hero-tablet2x.jpg");
     max-width: 768px;
   }
 
@@ -71,7 +71,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images6/hero-desktop.jpg");
+      url("./images6/hero-desktop.jpg");
     max-width: 1200px;
   }
 
@@ -82,27 +82,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images6/hero-desktop2x.jpg");
+      url("./images6/hero-desktop2x.jpg");
     max-width: 1200px;
   }
 }
-
-// .hero-background {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   text-align: center;
-//   max-width: 1600px;
-//   height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images3/imghero1.jpg");
-
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   background-color: var(--footer-background-color);
-// }

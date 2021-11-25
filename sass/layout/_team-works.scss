@@ -14,7 +14,8 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
-    }
+  }
+}
 
 .project-link {
   display: flex;
@@ -70,6 +71,7 @@
     gap: 30px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .project-name-list {
     display: grid;
@@ -77,6 +79,7 @@
     gap: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .project-name-list {
     display: grid;
@@ -95,10 +98,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-// .project-item {
-//   flex-basis: calc(100% / 3 - 30px);
-// }
 
 .project-name-list {
   list-style: none;
@@ -136,6 +135,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-bg {
+.сard-bg {
   height: 100%;
 }
