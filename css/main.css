@@ -78,6 +78,8 @@ body {
 }
 
 .header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--title-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -327,7 +329,7 @@ form textarea:focus {
 }
 
 .agreement-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   font-size: 12px;
@@ -732,7 +734,7 @@ form textarea:focus {
 
 @media screen and (min-width: 768px) {
   .header-contact {
-    display: inline;
+    display: block;
     margin-left: auto;
   }
 }
@@ -745,6 +747,31 @@ form textarea:focus {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-email {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-email {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-tel {
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-tel {
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 }
 
@@ -910,6 +937,12 @@ form textarea:focus {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-item-mail {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header__item + .header__item {
     margin-left: 30px;
@@ -959,7 +992,7 @@ form textarea:focus {
 
 @media screen and (min-width: 768px) {
   .header__link--current {
-    padding-bottom: 0;
+    padding-top: 32px;
     font-weight: 500;
     font-size: var(--main-font-size);
     line-height: 1.17;
@@ -970,7 +1003,7 @@ form textarea:focus {
 @media screen and (min-width: 768px) {
   .header__link--current::after {
     position: absolute;
-    top: 45px;
+    bottom: -1px;
     left: 0;
     content: " ";
     width: 100%;
@@ -983,7 +1016,6 @@ form textarea:focus {
 .header__contact {
   display: flex;
   align-items: center;
-  padding-top: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -1027,6 +1059,12 @@ form textarea:focus {
   letter-spacing: 00.06em;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1090,6 +1128,7 @@ form textarea:focus {
   .hero-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images6/hero-desktop2x.jpg");
     max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -1268,8 +1307,7 @@ form textarea:focus {
 }
 
 .team-div {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
   text-align: center;
 }
 
@@ -1593,10 +1631,6 @@ form textarea:focus {
   margin-left: 10px;
 }
 
-.footer-left {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-left {
     margin-right: 70px;
@@ -1665,11 +1699,8 @@ form textarea:focus {
 
 @media screen and (max-width: 479px) {
   .card-text {
-    font-size: 15px;
+    font-size: 4vw;
     top: 100%;
-    right: 24px;
-    left: 24px;
-    bottom: 24px;
   }
 }
 

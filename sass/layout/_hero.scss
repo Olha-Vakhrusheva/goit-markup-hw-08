@@ -11,6 +11,10 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
@@ -94,5 +98,6 @@
       ),
       url("../images6/hero-desktop2x.jpg");
     max-width: 1600px;
+    height: 600px;
   }
 }
