@@ -26,6 +26,7 @@
   &:focus .card-text {
     pointer-events: auto;
     transform: translateY(-100%);
+    overflow-y: scroll;
   }
 
   &:hover .text-project,
@@ -59,7 +60,6 @@
 
 @media screen and (max-width: 479px) {
   .card-text {
-    font-size: 4vw;
     top: 100%;
   }
 }

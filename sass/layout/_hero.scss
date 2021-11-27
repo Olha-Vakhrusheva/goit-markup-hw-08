@@ -67,6 +67,7 @@
       ),
       url("../images6/hero-tablet.jpg");
     max-width: 1200px;
+    height: 400px;
   }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -78,6 +79,7 @@
       ),
       url("../images6/hero-tablet2x.jpg");
     max-width: 1200px;
+    height: 400px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -87,6 +89,9 @@
       ),
       url("../images6/hero-desktop.jpg");
     max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -99,5 +104,7 @@
       url("../images6/hero-desktop2x.jpg");
     max-width: 1600px;
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }

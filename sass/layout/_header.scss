@@ -82,7 +82,8 @@
 
 @media screen and (min-width: 1200px) {
   .header-email {
-    padding-top: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -94,8 +95,8 @@
 
 @media screen and (min-width: 1200px) {
   .header-tel {
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -226,6 +227,10 @@
 .header__mobile-contact--tel {
   color: var(--logo-accent-color);
   text-decoration: none;
+
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+  }
 }
 
 .header__mobile-item--email {
@@ -242,6 +247,7 @@
 
 .header__social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__social-item {
