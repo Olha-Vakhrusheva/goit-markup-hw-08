@@ -228,7 +228,7 @@
   color: var(--logo-accent-color);
   text-decoration: none;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     font-size: 26px;
   }
 }
@@ -277,7 +277,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-item-mail {
     margin-bottom: 10px;
   }
